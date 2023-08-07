@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --darkBlue: #15191d;
+    --navy: #12171c;
+    --grey: #7c7c7c;
+    --darkYellow: #BC8F26;
+    --mediumYellow: #D5AC4A;
+    --yellow: #FFCE1F;
+    --blue: #06789C;
+    --brown: #957425;
+    --red: #AB3303;
+}
+body {
+    background-color: var(--darkBlue);
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+p, button, a {
+  font-family: Maven Pro;
+}
+a {
+  text-decoration: none;
+}
+.jestiny {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--white);
+    cursor: pointer;
+    letter-spacing: 7px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+.nav-button {
+    display: flex;
+    gap: 2rem;
+}
+.button-nav {
+  background: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  color: var(--white);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.25rem;
+}
+.button-nav:hover {
+  box-shadow: 0px 2px 0px 0px var(--yellow);
+}
+.button-prime {
+  box-shadow: 0px 2px 0px 0px var(--yellow);
+}
+.register-main {
+  padding-top: 7rem;
+  display: flex;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  align-items: start;
+  justify-content: center;
+}
+.pic {
+  max-width: 46%;
+  height: 100%;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+}
+.register-container {
+  min-width: 42%;
+  height:100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+  padding: 2rem;
+}
+.register {
+  font-size: 2.75rem;
+  color: var(--black);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+  width: 85%;
+}
+.form-label {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.form-input {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding-inline: 0.75rem;
+  font-family: Maven Pro;
+  font-weight: 600;
+}
+.submit-button {
+  margin-top: 2.1rem;
+  width: 100%;
+  height: 3.125rem;
+  font-size: 1rem;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.25rem;
+  font-family: Maven Pro;
+  background-color: var(--mediumYellow);
+  border: 2px solid var(--brown);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+}
+.submit-button:hover {
+  background-color: var(--brown);
+  border: 2px solid var(--mediumYellow);
+}
